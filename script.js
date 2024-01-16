@@ -17,6 +17,16 @@ function search(str) {
 	// deleting all the suggestions if the search box is empty
 	if (str.length === 0) {
 		results = [];
+		// suggestions.classList.add('hidden-ul');
+	}
+	// if the list is too long we add a scrollbar
+	if (results.length >= 8) {
+		suggestions.classList.add('long-ul-list');
+	}
+	else {
+		if (suggestions.classList.contains("long-ul-list")) {
+			suggestions.classList.remove('long-ul-list');
+		}
 	}
 	return results;
 }
