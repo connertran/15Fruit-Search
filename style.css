@@ -57,11 +57,15 @@ ul {
 
 /* if the ul list is too long it will overflow the page */
 .long-ul-list {
-  height: 275px;
+  height: 206px;
   overflow: scroll;
+  /* scrollbar design for Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(128, 128, 128, 0.4) #f1ae4a;
 }
 
 /* designing the scrollbar */
+/* for Chrome and Safari */
 ::-webkit-scrollbar {
   width: 10px;
   height: 0;

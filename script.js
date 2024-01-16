@@ -20,7 +20,7 @@ function search(str) {
 		// suggestions.classList.add('hidden-ul');
 	}
 	// if the list is too long we add a scrollbar
-	if (results.length >= 8) {
+	if (results.length >= 6) {
 		suggestions.classList.add('long-ul-list');
 	}
 	else {
